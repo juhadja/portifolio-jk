@@ -221,15 +221,15 @@ export default function Portfolio() {
               {t('academicExperience.title')}
             </motion.h2>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 ">
               {projects.map((project, index) => (
                 <motion.div key={index} variants={fadeInUp}>
-                  <Card className="h-full hover:shadow-lg transition-shadow dark:bg-slate-900 dark:border-slate-800 overflow-hidden p-0 flex flex-col">
+                  <Card className="h-full hover:shadow-lg transition-shadow dark:bg-slate-900 dark:border-slate-800 overflow-hidden p-0 flex flex-col p-2">
                     {project.thumbnail ? (
                       <img
                         src={project.thumbnail}
                         alt={project.title}
-                        className="h-48 w-full object-cover"
+                        className="h-48 w-full object-cover rounded-t-md"
                       />
                     ) : (
                       <div className={`h-48 ${project.gradient}`}></div>
