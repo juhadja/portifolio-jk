@@ -1,0 +1,122 @@
+{
+  "header": {
+    "contact": "Contato",
+    "downloadCV": "Baixar CV"
+  },
+  "hero": {
+    "name": "Julia Hadja Kfouri Nunes",
+    "role": "Desenvolvedora de Software",
+    "subtitle": "Desenvolvimento de Sistemas | Desenvolvimento Front-end",
+    "description": "Estudante de Engenharia de Software com experiência inicial em desenvolvimento front-end, aplicando conceitos de usabilidade e interfaces responsivas. Possuo habilidades em comunicação, resolução de problemas e gestão de relacionamentos, que fortalecem minha capacidade de compreender necessidades de usuários e transformá-las em soluções práticas. Tenho interesse em consolidar carreira na área de desenvolvimento de software, unindo habilidades técnicas e interpessoais para agregar valor às equipes e organizações."
+  },
+  "education": {
+    "title": "Formação Acadêmica",
+    "degree": "Bacharelado em Engenharia de Software",
+    "institution": "Fiap | Faculdade de Informática e Administração de Paulista",
+    "description": "Formação sólida em fundamentos de computação, algoritmos, estruturas de dados, engenharia de software e desenvolvimento de sistemas.",
+    "conclusion": "Conclusão: Junho de 2028"
+  },
+  "academicExperience": {
+    "title": "Experiências Acadêmicas",
+    "viewMore": "Ver mais",
+    "visitProject": "Visitar Projeto",
+    "project1": {
+      "title": "MAPA DA DOR – Projeto Challenge na FIAP Centro Universitário (2025)",
+      "description": "Projeto desenvolvido para o challenge com o hospital infantil Sabará",
+      "fullDescription": "O MAPA DA DOR é um projeto inovador desenvolvido em parceria com o Hospital Infantil Sabará durante o Challenge da FIAP. A solução visa auxiliar profissionais de saúde na avaliação e monitoramento da dor em pacientes pediátricos, utilizando interfaces intuitivas e metodologias validadas cientificamente. O projeto inclui um sistema de registro, acompanhamento histórico e relatórios para melhor tomada de decisão clínica.",
+      "link": "https://juhadja.github.io/Mapa-da-Dor/",
+      "technologies": ["React", "JavaScript", "Tailwind"]
+    },
+    "project2": {
+      "title": "BioVolt! Transformando resíduos em energia e benefícios para a comunidade!",
+      "description": "Projeto desenvolvido para a Global Solution - FIAP",
+      "fullDescription": "E se o seu lixo orgânico pudesse gerar energia e, ao mesmo tempo, reduzir sua conta de luz? Esse foi o conceito central do nosso projeto! Criamos um sistema onde a comunidade poderia entregar resíduos orgânicos, que seriam convertidos em energia limpa, enquanto a quantidade depositada se transformaria em descontos na conta de luz. Além da retirada desse material de rios poluídos, parte dos resíduos será transformado em biodiesel. Assim, o projeto oferece uma solução sustentável de geração de energia que será destinada para empresas, para o setor de agronegócio. Projetamos o gerador em C++ no simulador Wokwi, com uma landingpage explicando o projeto juntamente com um simulador de desconto na conta de luz, baseado no material entregue.",
+      "link": "https://rafaela-heer.github.io/Global-Solution---BioVolt/",
+      "technologies": ["JavaScript", "HTML", "CSS", "Arduino UNO"]
+    },
+    "project3": {
+      "title": "Pacotinho do Amor",
+      "description": "Site para o Projeto Pacotinho de Amor, Ong de adoção de animais",
+      "fullDescription": "No último semestre de 2024, tive a oportunidade de desenvolver um site para o Projeto Pacotinho de Amor, um projeto incrível que facilita a adoção de animais, incentiva doações e promove o voluntariado. Com seções para a adoção, doação e cadastro pra voluntários, página de eventos e informações do projeto com um sistema de pagamento integrado pra pix e cartão, facilitando as doações. Utilizamos HTML, CSS e JavaScript no processo. Tudo pensando em um design intuitivo pra uma navegação acessível, eficiente e dinâmica. Esse projeto foi uma experiência enriquecedora e muito especial, unindo tecnologia e impacto social.",
+      "link": "https://rafaela-heer.github.io/Projeto-ong-pacotinho-de-amor/index.html",
+      "technologies": ["JavaScript", "HTML", "CSS"]
+    },
+    "project4": {
+      "title": "E-commerce Vinheria Agnello",
+      "description": "Projeto de e-commerce desenvolvido para a Vinheria Agnello, projeto checkpoint na FIAP - Centro Universitário",
+      "fullDescription": "O cliente explora uma interface elegante e intuitiva que apresenta uma seleção cuidadosamente curada de vinhos finos. Ao filtrar por sabor, região ou ocasião, ele pode descobrir rótulos que combinam perfeitamente com suas preferências. Cada página de produto traz descrições detalhadas, sugestões de harmonização e recursos visuais imersivos que dão vida à experiência do vinho.",
+      "link": "https://github.com/juhadja",
+      "technologies": ["JavaScript", "HTML", "CSS", "Figma"]
+    }
+  },
+  "professionalExperience": {
+    "title": "Experiência Profissional",
+    "job1": {
+      "title": "Assistente de Desenvolvimento de Software",
+      "company": "LigaTech Soluções",
+      "description": "Responsável por desenvolvimento front-end, aplicando conceitos de usabilidade e interfaces dinâmicas e responsivas. Contribuo no desenvolvimento de interfaces dinâmicas e interativas. Atuo na criação de soluções eficientes e responsivas, sempre considerando as melhores práticas da indústria de software. Coloco em prática meus aprendizados da graduação, aprimorando meus conhecimentos na área de front-end.",
+      "period": "Novembro 2024 - Presente"
+    },
+    "job2": {
+      "title": "Atendimento ao cliente",
+      "company": "LigaTech Soluções",
+      "description": "Respondi prontamente às perguntas dos clientes pessoalmente ou por telefone, e-mail, e-mail ou mídia social. Atendi às necessidades de clientes de forma ágil e eficiente.Auxiliei clientes para que pudessem utilizar nosso sistema com excelência.",
+      "period": "Setembro 2023 - Novembro 2024"
+    }
+  },
+  "courses": {
+    "title": "Cursos Complementares",
+    "course1": {
+      "title": "Node.js e terminal",
+      "description": "Curso: dominando o ambiente de desenvolvimento front-end – ALURA (2025)"
+    },
+    "course2": {
+      "title": "React: JSX e Hooks",
+      "description": "Formação: React, desenvolva aplicações web usando JSX e Hooks   – ALURA (2025)"
+    },
+    "course3": {
+      "title": "React com Vite",
+      "description": "React, configurando e estruturando projetos com Vite – ALURA (2024)"
+    },
+    "course4": {
+      "title": "UI/UX Design Fundamentals",
+      "description": "Princípios de design, prototipagem e experiência do usuário"
+    },
+    "course5": {
+      "title": "Git e GitHub Avançado",
+      "description": "Controle de versão, workflows colaborativos e CI/CD"
+    }
+  },
+  "skills": {
+    "title": "Habilidades Profissionais e Pessoais",
+    "professional": {
+      "title": "Profissionais",
+      "skill1": "Desenvolvimento Front-end (React e Next.js)",
+      "skill2": "TypeScript e JavaScript moderno",
+      "skill3": "Tailwind CSS, Styled Components, SASS",
+      "skill4": "Node.js e desenvolvimento de APIs",
+      "skill5": "Git, GitHub e metodologias ágeis",
+      "skill6": "Responsive Design e Mobile First"
+    },
+    "personal": {
+      "title": "Pessoais",
+      "skill1": "Comunicação clara e efetiva",
+      "skill2": "Trabalho em equipe e colaboração",
+      "skill3": "Resolução criativa de problemas",
+      "skill4": "Aprendizado contínuo e adaptabilidade",
+      "skill5": "Organização e gestão de tempo",
+      "skill6": "Atenção aos detalhes"
+    }
+  },
+  "languages": {
+    "title": "Idiomas",
+    "description": "Português nativo, Inglês fluente (avançado) e Espanhol intermediário"
+  },
+  "contact": {
+    "title": "Vamos trabalhar juntos?",
+    "description": "Estou sempre aberta a novos desafios e oportunidades. Entre em contato para conversarmos sobre projetos, colaborações ou apenas para dizer oi!"
+  },
+  "footer": {
+    "copyright": "© 2026 Julia Hadja Kfouri Nunes. Todos os direitos reservados."
+  }
+}
