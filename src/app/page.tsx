@@ -496,16 +496,17 @@ export default function Portfolio() {
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="lg" variant="secondary">
                 <Mail className="mr-2 h-5 w-5" />
-                julia.kfouri@email.com
+                juliahadja@gmail.com
               </Button>
-              <Button size="lg" variant="outline" className="bg-transparent text-white hover:bg-white/10">
+              <a href="https://github.com/juhadja"><Button size="lg" variant="outline" className="bg-transparent text-white hover:bg-white/10">
                 <Github className="mr-2 h-5 w-5" />
                 GitHub
-              </Button>
-              <Button size="lg" variant="outline" className="bg-transparent text-white hover:bg-white/10">
+              </Button></a>
+              <a href="https://www.linkedin.com/in/juhadja/"><Button size="lg" variant="outline" className="bg-transparent text-white hover:bg-white/10">
                 <Linkedin className="mr-2 h-5 w-5" />
                 LinkedIn
-              </Button>
+              </Button></a>              
+              
             </motion.div>
           </motion.div>
         </div>
