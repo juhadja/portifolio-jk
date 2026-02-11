@@ -103,7 +103,8 @@ export default function Portfolio() {
             transition={{ delay: 0.2 }}
             className="text-xl font-bold text-slate-800 dark:text-slate-100"
           >
-            JK
+            <a href="#">JK</a>
+            
           </motion.div>
           <div className="flex gap-2 items-center">
             <LanguageSwitcher />
