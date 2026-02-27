@@ -14,6 +14,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Julia Hadja Kfouri Nunes | Desenvolvedora de Software",
   description: "Portfólio de Julia Hadja Kfouri Nunes - Desenvolvedora de Software",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default async function RootLayout({

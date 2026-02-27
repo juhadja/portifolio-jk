@@ -28,14 +28,27 @@ export default function Portfolio() {
     }
   };
 
-  const [mouse, setMouse] = React.useState({ x: 50, y: 50 });
+  const spotlightRef = React.useRef<HTMLDivElement>(null);
+  const glowNearRef = React.useRef<HTMLDivElement>(null);
+  const glowFarRef = React.useRef<HTMLDivElement>(null);
 
   const handleHeroMouseMove = (e: React.MouseEvent<HTMLElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
-    setMouse({
-      x: ((e.clientX - rect.left) / rect.width) * 100,
-      y: ((e.clientY - rect.top) / rect.height) * 100,
-    });
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const xPct = (x / rect.width) * 100;
+    const yPct = (y / rect.height) * 100;
+    if (spotlightRef.current) {
+      const mask = `radial-gradient(circle 200px at ${xPct}% ${yPct}%, black 0%, transparent 100%)`;
+      spotlightRef.current.style.maskImage = mask;
+      spotlightRef.current.style.setProperty('-webkit-mask-image', mask);
+    }
+    if (glowNearRef.current) {
+      glowNearRef.current.style.transform = `translate(calc(${x}px - 50%), calc(${y}px - 50%))`;
+    }
+    if (glowFarRef.current) {
+      glowFarRef.current.style.transform = `translate(calc(${x}px - 50%), calc(${y}px - 50%))`;
+    }
   };
 
   const scrollToContact = () => {
@@ -179,35 +192,26 @@ export default function Portfolio() {
 
         {/* Dot grid — spotlight near cursor */}
         <div
+          ref={spotlightRef}
           className="absolute inset-0 z-0"
           style={{
             backgroundImage: 'radial-gradient(circle, #71717a 1.5px, transparent 1.5px)',
             backgroundSize: '28px 28px',
-            maskImage: `radial-gradient(circle 200px at ${mouse.x}% ${mouse.y}%, black 0%, transparent 100%)`,
-            WebkitMaskImage: `radial-gradient(circle 200px at ${mouse.x}% ${mouse.y}%, black 0%, transparent 100%)`,
           }}
         />
 
         {/* Violet glow — segue o cursor de perto */}
         <div
-          className="absolute w-90 h-90 rounded-full blur-[90px] z-0 bg-violet-600/14 pointer-events-none"
-          style={{
-            left: `${mouse.x}%`,
-            top: `${mouse.y}%`,
-            transform: 'translate(-50%, -50%)',
-            transition: 'left 0.06s linear, top 0.06s linear',
-          }}
+          ref={glowNearRef}
+          className="absolute top-0 left-0 w-90 h-90 rounded-full blur-[90px] z-0 bg-violet-600/14 pointer-events-none"
+          style={{ willChange: 'transform' }}
         />
 
         {/* Violet glow — halo maior, segue com lag */}
         <div
-          className="absolute w-175 h-175 rounded-full blur-[140px] z-0 bg-violet-500/6 pointer-events-none"
-          style={{
-            left: `${mouse.x}%`,
-            top: `${mouse.y}%`,
-            transform: 'translate(-50%, -50%)',
-            transition: 'left 0.5s ease-out, top 0.5s ease-out',
-          }}
+          ref={glowFarRef}
+          className="absolute top-0 left-0 w-175 h-175 rounded-full blur-[140px] z-0 bg-violet-500/6 pointer-events-none"
+          style={{ willChange: 'transform', transition: 'transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94)' }}
         />
 
         <div className="relative z-10 container max-w-5xl mx-auto text-center">
