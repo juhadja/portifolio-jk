@@ -40,6 +40,8 @@ export default async function RootLayout({
             {children}
           </ThemeProvider>
         </NextIntlClientProvider>
+        <script dangerouslySetInnerHTML={{ __html: `window.TalkConfig = { apiKey: '3fb5afff-7664-4a8e-8c0e-980fa9ada62a', talkUrl: 'http://localhost:3000' };` }} />
+        <script src="https://talk-xi-five.vercel.app//widget.js" async></script>
       </body>
     </html>
   );
