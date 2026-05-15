@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Montserrat } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   const locale = await getLocale();
   const messages = await getMessages();
@@ -40,8 +41,8 @@ export default async function RootLayout({
             {children}
           </ThemeProvider>
         </NextIntlClientProvider>
-        <script dangerouslySetInnerHTML={{ __html: `window.TalkConfig = { apiKey: '3fb5afff-7664-4a8e-8c0e-980fa9ada62a', talkUrl: 'http://localhost:3000' };` }} />
-        <script src="https://talk-xi-five.vercel.app//widget.js" async></script>
+        <script dangerouslySetInnerHTML={{ __html: `window.TalkConfig = { apiKey: '3fb5afff-7664-4a8e-8c0e-980fa9ada62a' };` }} />
+        <script src="https://talk-xi-five.vercel.app/widget.js" async />
       </body>
     </html>
   );
